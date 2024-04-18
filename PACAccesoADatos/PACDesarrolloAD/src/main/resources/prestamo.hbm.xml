@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="entidades">
+
+	<class name="Prestamo" table="prestamos">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="fec_pres" column="fec_pres" type="date"></property>
+		<property name="fec_dev" column="fec_dev" type="date"></property>
+
+		<many-to-one name="libro" column="libro_id" class="entidades.Libro"></many-to-one>
+		<many-to-one name="lector" column="lector_id" class="entidades.Lector"></many-to-one>
+	</class>
+
+</hibernate-mapping>

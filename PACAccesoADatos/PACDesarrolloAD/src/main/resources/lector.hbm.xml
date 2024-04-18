@@ -1,0 +1,18 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="entidades">
+	
+
+	<class name="Lector" table="lectores">
+		<id name="id" column="lector_id">
+			<generator class="native" />
+		</id>
+		<property name="nombre" column="nombre" type="string"></property>
+		<property name="apellido" column="apellido" type="string"></property>
+		<property name="email" column="email" type="string"></property>
+
+	</class>
+
+</hibernate-mapping>
