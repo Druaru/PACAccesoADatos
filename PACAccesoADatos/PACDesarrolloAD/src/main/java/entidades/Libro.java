@@ -1,6 +1,7 @@
 package entidades;
 
 import java.sql.Date;
+//Modelado de la clase libro con atributos, getter/setter y varios constructores.
 
 public class Libro {
 	private Long id;
@@ -16,6 +17,23 @@ public class Libro {
 		this.anho = anho;
 		this.disponible = disponible;
 	}
+	
+	
+
+	public Libro() {
+
+	}
+
+	public Libro(Long id, String titulo, String autor, Date anho, boolean disponible) {
+		super();
+		this.id = id;
+		this.titulo = titulo;
+		this.autor = autor;
+		this.anho = anho;
+		this.disponible = disponible;
+	}
+
+
 
 	public Long getId() {
 		return id;

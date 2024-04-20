@@ -1,6 +1,7 @@
 package entidades;
 
 import java.sql.Date;
+//Modelado de la clase prestamo con atributos, getter/setter y varios constructores.
 
 public class Prestamo {
 	private Long id;
@@ -17,6 +18,15 @@ public class Prestamo {
 		this.libro = libro;
 		this.lector = lector;
 	}
+	
+	
+
+
+	public Prestamo() {
+	
+	}
+
+
 
 
 	public Long getId() {

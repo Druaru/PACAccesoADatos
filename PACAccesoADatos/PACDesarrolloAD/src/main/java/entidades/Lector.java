@@ -1,5 +1,5 @@
 package entidades;
-
+//Modelado de la clase lector con atributos, getter/setter y varios constructores.
 public class Lector {
 	private Long id;
 	private String nombre;
@@ -12,6 +12,20 @@ public class Lector {
 		this.apellido = apellido;
 		this.email = email;
 	}
+	
+
+	public Lector() {
+		
+	}
+
+	public Lector(Long id, String nombre, String apellido, String email) {
+		super();
+		this.id = id;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.email = email;
+	}
+
 
 	public Long getId() {
 		return id;
